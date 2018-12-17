@@ -1,7 +1,17 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/adamlodowski/Documents/Makers/projects/Week4/messaging_app/Bounce-messages/spec/features/testing_infrastructure_spec.rb": [
+      "/Users/jacqueslaffy/Desktop/Projects/Bounce-messages/spec/features/testing_infrastructure_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/jacqueslaffy/Desktop/Projects/Bounce-messages/spec/features/username_spec.rb": [
         1,
         null,
         1,
@@ -12,6 +22,6 @@
         null
       ]
     },
-    "timestamp": 1545060308
+    "timestamp": 1545062104
   }
 }

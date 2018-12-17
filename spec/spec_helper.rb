@@ -1,7 +1,7 @@
 ENV['RACK_ENV'] = 'test'
 require 'app'
 require 'capybara'
-# require 'features/web_helper'
+require 'features/web_helpers'
 require 'rspec'
 require 'capybara/rspec'
 require 'simplecov'
@@ -15,4 +15,3 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   # SimpleCov::Formatter::HTMLFormatter
 ])
 SimpleCov.start
-
