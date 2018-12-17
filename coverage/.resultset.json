@@ -1,11 +1,9 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/adamlodowski/Documents/Makers/projects/Week4/messaging_app/Bounce-messages/spec/features/messages_spec.rb": [
+      "/Users/jacqueslaffy/Desktop/Projects/Bounce-messages/spec/features/messages_spec.rb": [
         1,
         null,
-        1,
-        1,
         1,
         1,
         1,
@@ -18,17 +16,7 @@
         null,
         null
       ],
-      "/Users/adamlodowski/Documents/Makers/projects/Week4/messaging_app/Bounce-messages/spec/features/testing_infrastructure_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/adamlodowski/Documents/Makers/projects/Week4/messaging_app/Bounce-messages/spec/features/username_spec.rb": [
+      "/Users/jacqueslaffy/Desktop/Projects/Bounce-messages/spec/features/testing_infrastructure_spec.rb": [
         1,
         null,
         1,
@@ -39,6 +27,6 @@
         null
       ]
     },
-    "timestamp": 1545064905
+    "timestamp": 1545065792
   }
 }
