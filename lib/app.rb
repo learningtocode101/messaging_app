@@ -9,12 +9,12 @@ class Bounce < Sinatra::Base
 
   post '/login' do
     session[:username] = params[:username]
-    redirect '/bounce'
+    redirect '/messages'
   end
 
-  get '/bounce' do
+  get '/messages' do
     @username = session[:username]
-    p @username
+    erb(:messages)
   end
 
 
