@@ -13,10 +13,15 @@ class Bounce < Sinatra::Base
   end
 
   get '/messages' do
+    @message = session[:message]
     @username = session[:username]
     erb(:messages)
   end
 
+  post '/send_message' do
+    session[:message] = params[:message]
+    redirect '/messages'
+  end
 
   run! if app_file == $0
 
