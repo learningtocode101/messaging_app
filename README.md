@@ -14,10 +14,12 @@ Meets current user requirements. Further requirements expected
 
 To install Bounce:
 
-`$ git clone https://github.com/rednblack99/Bounce-Tue
+```
+$ git clone https://github.com/rednblack99/Bounce-Tue
 $ cd Bounce-Tue
 $ bundle install
-$ rackup`
+$ rackup
+```
 
 Then head to the assigned port (default: 9292) to start sending messages!
 
