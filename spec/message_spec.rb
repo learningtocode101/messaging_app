@@ -7,7 +7,7 @@ describe Message do
   end
 
   it "knows it's time" do
-    expect(message.time).to eq Time.now.strftime("%d-%m-%Y | %H:%M")
+    expect(message.display_time).to eq Time.now.strftime("%d-%m-%Y | %H:%M")
   end
 
   it "returns preview" do

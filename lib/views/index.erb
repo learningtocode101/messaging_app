@@ -5,7 +5,7 @@
 <p>
 <% @messages.reverse.each do |message| %>
   <div>
-  <a href="/full_message" id="<%=message.id %>"> <%= message.time%> ~ <%=message.preview%> </a>
+  <a href="/full_message" id="<%=message.time %>"> <%= message.display_time%> ~ <%=message.preview%> </a>
   </div>
 <% end %>
 </p>

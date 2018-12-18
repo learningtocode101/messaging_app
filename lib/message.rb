@@ -1,14 +1,17 @@
 class Message
-  attr_reader :content, :time, :id
+  attr_reader :content, :time
 
-  def initialize(content, id=1)
+  def initialize(content, time=Time.now)
     @content = content
-    @time = Time.now.strftime("%d-%m-%Y | %H:%M")
-    @id = id
+    @time = time
   end
 
   def preview
     @content.split("").take(20).join
+  end
+
+  def display_time
+    @time.strftime("%d-%m-%Y | %H:%M")
   end
 
 end
