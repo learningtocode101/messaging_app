@@ -15,6 +15,11 @@ class Bounce < Sinatra::Base
     redirect '/'
   end
 
+  get '/full_message' do
+    @full_message = session[:message_history]
+    erb(:full_message)
+  end
+
   run! if app_file == $0
 
 end
