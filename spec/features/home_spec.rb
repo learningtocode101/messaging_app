@@ -1,6 +1,6 @@
 require 'app'
 
-feature 'Messages' do
+feature 'Homepage' do
   scenario 'User can send a message' do
     send_message
     expect(page).to have_content "Hello, world"
@@ -17,5 +17,10 @@ feature 'Messages' do
     click_button 'Send'
     expect(page).to have_content "Hello, world"
     expect(page).to have_content "Hello, again!"
+  end
+
+  scenario 'displayed message has a time code' do
+    send_message
+    expect(page).to have_content(Time.now.strftime("%d-%m-%Y | %H:%M"))
   end
 end

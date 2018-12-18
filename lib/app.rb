@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/message'
 
 class Bounce < Sinatra::Base
   enable :sessions
@@ -10,7 +11,7 @@ class Bounce < Sinatra::Base
   end
 
   post '/send_message' do
-    session[:message_history] << params[:message]
+    session[:message_history] << Message.new(params[:message])
     redirect '/'
   end
 

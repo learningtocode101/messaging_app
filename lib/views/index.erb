@@ -2,10 +2,10 @@
 <img src="https://media.giphy.com/media/LpALgGQNZLzdm/giphy.gif" alt="Bouncy" height="300">
 
 
-<p> 
+<p>
 <% @messages.reverse.each do |message| %>
   <div>
-  <%= message %>
+  <%= message.time%> ~ <%=message.content%>
   </div>
 <% end %>
 </p>
