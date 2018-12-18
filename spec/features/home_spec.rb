@@ -23,4 +23,9 @@ feature 'Homepage' do
     send_message
     expect(page).to have_content(Time.now.strftime("%d-%m-%Y | %H:%M"))
   end
+
+  scenario 'displays only 20 first characters of a message' do
+    send_message
+    expect(page).not_to have_content "message. Banana"
+  end
 end
