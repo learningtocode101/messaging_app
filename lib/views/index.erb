@@ -1,10 +1,13 @@
 <h1>Welcome to Bounce</h1>
 <img src="https://media.giphy.com/media/LpALgGQNZLzdm/giphy.gif" alt="Bouncy" height="300">
 
-<%=@message%>
 
+<p> <%= @message_history.each { |message| p message.to_s }%> </p>
+
+<p>
 <form action="/send_message" method="post">
   <label for="message">Enter your message:</label>
     <input type="text" name="message">
   <input type="submit" value="Send">
 </form>
+</p>

@@ -10,4 +10,12 @@ feature 'Messages' do
     visit '/'
     expect(page).to have_xpath("//img[@src='https://media.giphy.com/media/LpALgGQNZLzdm/giphy.gif']")
   end
+
+  scenario 'Shows history of all messages sent this session' do
+    send_message
+    fill_in :message, with: "Hello, again!"
+    click_button 'Send'
+    expect(page).to have_content "Hello, world"
+    expect(page).to have_content "Hello, again!"
+  end
 end

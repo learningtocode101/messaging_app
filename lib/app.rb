@@ -4,7 +4,8 @@ class Bounce < Sinatra::Base
   enable :sessions
 
   get '/' do
-    @message = session[:message]
+    @message_history = []
+    @message_history << session[:message]
     erb(:index)
   end
 
