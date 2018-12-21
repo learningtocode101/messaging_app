@@ -1,4 +1,3 @@
-
 feature 'Homepage' do
   scenario 'User can send a message' do
     send_message
@@ -18,9 +17,9 @@ feature 'Homepage' do
     expect(page).to have_content "Hello, again!"
   end
 
-  scenario 'displayed message has a time code' do
+  scenario 'displayed message has a time stamp' do
     send_message
-    expect(page).to have_content(Time.now.strftime("%d-%m-%Y | %H:%M"))
+    expect(page).to have_content(Message.new.created_at)
   end
 
   scenario 'displays only 20 first characters of a message' do

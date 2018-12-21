@@ -1,19 +1,19 @@
-<h1>Welcome to Bounce</h1>
-<img src="https://media.giphy.com/media/LpALgGQNZLzdm/giphy.gif" alt="Bouncy" height="300">
+<div style = 'text-align: center'>
+  <h1>Welcome to Bounce</h1>
+  <img src="https://media.giphy.com/media/LpALgGQNZLzdm/giphy.gif" alt="Bouncy" height="300">
+    <% @full_message.reverse.each do |message| %>
+      <div>
+        <%= message.display_time%>
+        <a href=<%="/full_message/#{message.id}"%>><%=message.preview%> </a>
+        <hr style = 'width: 50%'>
+      </div>
+    <% end %>
+  <p>
+  <form action="/send_message" method="post">
+    <label for="message">Enter your message:</label>
+      <input type="text" name="message">
+    <input type="submit" value="Send">
+  </form>
+  </p>
 
-
-<p>
-<% @messages.reverse.each do |message| %>
-  <div>
-  <a href="/full_message" id="<%=message.time %>"> <%= message.display_time%> ~ <%=message.preview%> </a>
-  </div>
-<% end %>
-</p>
-
-<p>
-<form action="/send_message" method="post">
-  <label for="message">Enter your message:</label>
-    <input type="text" name="message">
-  <input type="submit" value="Send">
-</form>
-</p>
+</div>

@@ -1,25 +1,24 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/adamlodowski/Documents/Makers/projects/Week4/messaging_app/Bounce-Tue/spec/features/full_message_spec.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
+      "/Users/shaneil/Documents/Projects/Bounce-Tue/spec/features/full_message_spec.rb": [
         null,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null
       ],
-      "/Users/adamlodowski/Documents/Makers/projects/Week4/messaging_app/Bounce-Tue/spec/features/home_spec.rb": [
-        null,
+      "/Users/shaneil/Documents/Projects/Bounce-Tue/spec/features/home_spec.rb": [
         1,
         1,
         1,
@@ -44,25 +43,25 @@
         1,
         null,
         null,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/adamlodowski/Documents/Makers/projects/Week4/messaging_app/Bounce-Tue/spec/features/testing_infrastructure_spec.rb": [
-        1,
-        null,
-        1,
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/adamlodowski/Documents/Makers/projects/Week4/messaging_app/Bounce-Tue/spec/message_spec.rb": [
+      "/Users/shaneil/Documents/Projects/Bounce-Tue/spec/features/testing_infrastructure_spec.rb": [
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/shaneil/Documents/Projects/Bounce-Tue/spec/message_spec.rb": [
+        1,
+        1,
         1,
         4,
         1,
@@ -79,6 +78,6 @@
         null
       ]
     },
-    "timestamp": 1545155246
+    "timestamp": 1545405964
   }
 }

@@ -1,5 +1,4 @@
-<% @full_message.reverse.each do |message| %>
   <div>
-  <%= message.time%> ~ <%=message.content%> 
+  <%= @message.display_time%>
+  <%= @message.content%>
   </div>
-<% end %>

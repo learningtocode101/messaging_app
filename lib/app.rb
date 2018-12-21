@@ -1,22 +1,24 @@
+ENV['RACK_ENV'] ||= 'development'
 require 'sinatra/base'
 require './lib/message'
+require './config/data_mapper'
+require 'pry'
 
 class Bounce < Sinatra::Base
   enable :sessions
 
   get '/' do
-    session[:message_history] ||= []
-    @messages = session[:message_history]
+    @full_message = Message.all
     erb(:index)
   end
 
   post '/send_message' do
-    session[:message_history] << Message.new(params[:message])
+    Message.create(:content =>(params[:message]))
     redirect '/'
   end
 
-  get '/full_message' do
-    @full_message = session[:message_history]
+  get '/full_message/:id' do
+    @message = Message.get(params[:id])
     erb(:full_message)
   end
 

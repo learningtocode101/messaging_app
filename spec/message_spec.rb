@@ -1,7 +1,7 @@
 require 'message'
-
+require './config/data_mapper'
 describe Message do
-  subject(:message) { described_class.new("This is a very long test") }
+  subject(:message) { Message.create(:content => "This is a very long test") }
   it "knows it's content" do
     expect(message.content).to eq "This is a very long test"
   end
