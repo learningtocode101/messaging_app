@@ -131,7 +131,7 @@ GEM
       tilt (~> 2.0)
     stringex (1.5.1)
     tilt (2.0.9)
-    unicode-display_width (1.4.0)
+    unicode-display_width (1.4.1)
     uuidtools (2.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)

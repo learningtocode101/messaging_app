@@ -7,7 +7,7 @@ describe Message do
     expect(message.content).to eq 'This is a very long test'
   end
 
-  it 'returns messgae time' do
+  it 'returns message time' do
     expect(message.display_time).to eq Time.now.strftime('%d-%m-%Y | %H:%M')
   end
 

@@ -8,7 +8,7 @@ class Bounce < Sinatra::Base
   enable :sessions
 
   get '/' do
-    @full_message = Message.all
+    @messages = Message.all
     erb(:index)
   end
 
@@ -18,7 +18,7 @@ class Bounce < Sinatra::Base
   end
 
   get '/full_message/:id' do
-    @message = Message.get(params[:id])
+    @full_message = Message.get(params[:id])
     erb(:full_message)
   end
 

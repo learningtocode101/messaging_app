@@ -2,9 +2,9 @@
 
 ## Description
 Our initial iteration of an online messaging app. Allows millennials to:
-  *Enter messages and submit
-  *Display messages in reverse chronological order
-  *Display timestamp alongside message
+  * Enter messages and submit
+  * Display messages in reverse chronological order
+  * Display timestamp alongside message
 
 ## Build Status
 
@@ -27,5 +27,5 @@ Then head to the assigned port (default: 9292) to start sending messages!
 
 Type your message into the 'Enter you message' field and hit submit. It will appear along with the timestamp on that same page!
 
-## Credits
+## Contributions
   Shaneil Clarke, Adam Lodowski and Jacques Laffy
