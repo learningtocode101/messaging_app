@@ -5,7 +5,7 @@ require './config/data_mapper'
 require 'pry'
 
 class Bounce < Sinatra::Base
-  enable :sessions
+  # enable :sessions
 
   get '/' do
     @messages = Message.all

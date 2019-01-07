@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bounce Messaging</title>
+    <link rel="stylesheet" type="text/css" href="<%= url("/css/style.css") %>">
+  </head>
+
+  <body>
+    <header>
+      <h1 id="top">Welcome to Bounce Messaging</h1>
+      <img src="https://media.giphy.com/media/LpALgGQNZLzdm/giphy.gif" alt="Bouncy" id="ball_image">
+    </header>
+
+    <div id="form_area">
+      <form action="/send_message" method="post">
+        <label for="message">Message:</label>
+        <input type="text" name="message"> <br>
+        <input type="submit" value="Send" id="send_input">
+      </form>
+    </div>
+
+        <% @messages.reverse.each do |message| %>
+          <div class="message_area">
+            <div class="messages">
+              <a href=<%="/full_message/#{message.id}"%>> <%=message.preview%> </a>
+              <p id="time"><%= message.display_time%></p>
+            </div>
+          </div>
+
+        <% end %>
+
+
+
+  </body>
+</html>
